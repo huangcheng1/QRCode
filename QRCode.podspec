@@ -1,42 +1,26 @@
-#
-# Be sure to run `pod lib lint QRCode.podspec' to ensure this is a
-# valid spec before submitting.
-#
-# Any lines starting with a # are optional, but their use is encouraged
-# To learn more about a Podspec see http://guides.cocoapods.org/syntax/podspec.html
-#
 
 Pod::Spec.new do |s|
   s.name             = 'QRCode'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of QRCode.'
-
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
-
+  s.summary          = '二维码'
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+  二维码扫描，创建
+  qecode scan or create
                        DESC
 
-  s.homepage         = 'https://github.com/acct<blob>=<NULL>/QRCode'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
+  s.homepage         = 'https://github.com/huangcheng1/QRCode'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'acct<blob>=<NULL>' => 'huangcheng@souche.com' }
-  s.source           = { :git => 'https://github.com/acct<blob>=<NULL>/QRCode.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.author           = { 'huangcheng' => 'huangcheng' }
+  s.source           = { :git => 'https://github.com/huangcheng1/QRCode.git', :tag => s.version.to_s }
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'QRCode/Classes/**/*'
+  s.subspec 'Scan' do |camera|
+      camera.source_files = 'QRCode/Classes/camera/**/*'
+  end
   
-  # s.resource_bundles = {
-  #   'QRCode' => ['QRCode/Assets/*.png']
-  # }
+  s.subspec 'Create' do |create|
+      create.source_files = 'QRCode/Classes/create/**/*'
+  end
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
 end

@@ -1,0 +1,16 @@
+PODS:
+  - QRCode (0.1.0)
+
+DEPENDENCIES:
+  - QRCode (from `../`)
+
+EXTERNAL SOURCES:
+  QRCode:
+    :path: ../
+
+SPEC CHECKSUMS:
+  QRCode: f6f98515f09133d1614d9b279aa0f14570e19ab6
+
+PODFILE CHECKSUM: cdd11a565d6c83dfe1a6a88cc9a6158da884f2c1
+
+COCOAPODS: 1.4.0

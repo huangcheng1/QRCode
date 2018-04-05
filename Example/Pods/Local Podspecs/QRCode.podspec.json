@@ -1,0 +1,22 @@
+{
+  "name": "QRCode",
+  "version": "0.1.0",
+  "summary": "A short description of QRCode.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/acct<blob>=<NULL>/QRCode",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "acct<blob>=<NULL>": "huangcheng@souche.com"
+  },
+  "source": {
+    "git": "https://github.com/acct<blob>=<NULL>/QRCode.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "QRCode/Classes/**/*"
+}
