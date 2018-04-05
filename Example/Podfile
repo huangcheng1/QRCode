@@ -1,0 +1,6 @@
+use_frameworks!
+target 'QRCode_Tests' do
+  pod 'QRCode', :path => '../'
+  
+  
+end
