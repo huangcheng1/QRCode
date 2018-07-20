@@ -1,22 +1,31 @@
 {
   "name": "QRCode",
   "version": "0.1.0",
-  "summary": "A short description of QRCode.",
-  "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/acct<blob>=<NULL>/QRCode",
+  "summary": "二维码",
+  "description": "二维码扫描，创建\nqecode scan or create",
+  "homepage": "https://github.com/huangcheng1/QRCode",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
   },
   "authors": {
-    "acct<blob>=<NULL>": "huangcheng@souche.com"
+    "huangcheng": "huangcheng"
   },
   "source": {
-    "git": "https://github.com/acct<blob>=<NULL>/QRCode.git",
+    "git": "https://github.com/huangcheng1/QRCode.git",
     "tag": "0.1.0"
   },
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "QRCode/Classes/**/*"
+  "subspecs": [
+    {
+      "name": "Scan",
+      "source_files": "QRCode/Classes/camera/**/*"
+    },
+    {
+      "name": "Create",
+      "source_files": "QRCode/Classes/create/**/*"
+    }
+  ]
 }

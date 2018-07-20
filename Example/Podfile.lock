@@ -1,5 +1,9 @@
 PODS:
-  - QRCode (0.1.0)
+  - QRCode (0.1.0):
+    - QRCode/Create (= 0.1.0)
+    - QRCode/Scan (= 0.1.0)
+  - QRCode/Create (0.1.0)
+  - QRCode/Scan (0.1.0)
 
 DEPENDENCIES:
   - QRCode (from `../`)
@@ -9,7 +13,7 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  QRCode: f6f98515f09133d1614d9b279aa0f14570e19ab6
+  QRCode: 49ad2a73751c4850854c0ddd631f27403d589a6e
 
 PODFILE CHECKSUM: cdd11a565d6c83dfe1a6a88cc9a6158da884f2c1
 

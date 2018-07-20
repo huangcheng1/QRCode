@@ -81,6 +81,7 @@
     if([self.cameraManager respondsToSelector:@selector(startRunning)]){
         [self.cameraManager startRunning];//开始相机输入
     }
+    [self.navigationController setNavigationBarHidden:NO animated:YES];
 }
 
 - (void)viewDidLayoutSubviews{
